@@ -8,6 +8,7 @@
 // -*- c++ -*-
 
 #include <faiss/Clustering.h>
+#include <faiss/VectorTransform.h>
 #include <faiss/impl/AuxIndexStructures.h>
 
 #include <cinttypes>
@@ -17,11 +18,11 @@
 
 #include <omp.h>
 
-#include <faiss/utils/utils.h>
-#include <faiss/utils/random.h>
-#include <faiss/utils/distances.h>
-#include <faiss/impl/FaissAssert.h>
 #include <faiss/IndexFlat.h>
+#include <faiss/impl/FaissAssert.h>
+#include <faiss/utils/distances.h>
+#include <faiss/utils/random.h>
+#include <faiss/utils/utils.h>
 
 namespace faiss {
 
@@ -308,10 +309,10 @@ void Clustering::train_encoded (idx_t nx, const uint8_t *x_in,
         del1.reset (x_new); x = x_new;
         del3.reset (weights_new); weights = weights_new;
     } else if (nx < k * min_points_per_centroid) {
-        fprintf (stderr,
-                 "WARNING clustering %" PRId64 " points to %zd centroids: "
-                 "please provide at least %" PRId64 " training points\n",
-                 nx, k, idx_t(k) * min_points_per_centroid);
+        // fprintf (stderr,
+        //          "WARNING clustering %" PRId64 " points to %zd centroids: "
+        //          "please provide at least %" PRId64 " training points\n",
+        //          nx, k, idx_t(k) * min_points_per_centroid);
     }
 
     if (nx == k) {
@@ -526,6 +527,197 @@ float kmeans_clustering (size_t d, size_t n, size_t k,
     clus.train (n, x, index);
     memcpy(centroids, clus.centroids.data(), sizeof(*centroids) * d * k);
     return clus.iteration_stats.back().obj;
+}
+
+/******************************************************************************
+ * ProgressiveDimClustering implementation
+ ******************************************************************************/
+
+ProgressiveDimClusteringParameters::ProgressiveDimClusteringParameters() {
+    progressive_dim_steps = 10;
+    apply_pca = true; // seems a good idea to do this by default
+    niter = 10;       // reduce nb of iterations per step
+}
+
+Index* ProgressiveDimIndexFactory::operator()(int dim) {
+    return new IndexFlatL2(dim);
+}
+
+ProgressiveDimClustering::ProgressiveDimClustering(int d, int k) : d(d), k(k) {}
+
+ProgressiveDimClustering::ProgressiveDimClustering(
+        int d,
+        int k,
+        const ProgressiveDimClusteringParameters& cp)
+        : ProgressiveDimClusteringParameters(cp), d(d), k(k) {}
+
+namespace {
+
+using idx_t = Index::idx_t;
+
+void copy_columns(idx_t n, idx_t d1, const float* src, idx_t d2, float* dest) {
+    idx_t d = std::min(d1, d2);
+    for (idx_t i = 0; i < n; i++) {
+        memcpy(dest, src, sizeof(float) * d);
+        src += d1;
+        dest += d2;
+    }
+}
+
+}; // namespace
+
+void ProgressiveDimClustering::train(
+        idx_t n,
+        const float* x,
+        ProgressiveDimIndexFactory& factory) {
+    int d_prev = 0;
+
+    PCAMatrix pca(d, d);
+
+    std::vector<float> xbuf;
+    if (apply_pca) {
+        if (verbose) {
+            printf("Training PCA transform\n");
+        }
+        pca.train(n, x);
+        if (verbose) {
+            printf("Apply PCA\n");
+        }
+        xbuf.resize(n * d);
+        pca.apply_noalloc(n, x, xbuf.data());
+        x = xbuf.data();
+    }
+
+    for (int iter = 0; iter < progressive_dim_steps; iter++) {
+        int di = int(pow(d, (1. + iter) / progressive_dim_steps));
+        if (verbose) {
+            printf("Progressive dim step %d: cluster in dimension %d\n",
+                   iter,
+                   di);
+        }
+        std::unique_ptr<Index> clustering_index(factory(di));
+
+        Clustering clus(di, k, *this);
+        if (d_prev > 0) {
+            // copy warm-start centroids (padded with 0s)
+            clus.centroids.resize(k * di);
+            copy_columns(
+                    k, d_prev, centroids.data(), di, clus.centroids.data());
+        }
+        std::vector<float> xsub(n * di);
+        copy_columns(n, d, x, di, xsub.data());
+
+        clus.train(n, xsub.data(), *clustering_index.get());
+
+        centroids = clus.centroids;
+        iteration_stats.insert(
+                iteration_stats.end(),
+                clus.iteration_stats.begin(),
+                clus.iteration_stats.end());
+
+        d_prev = di;
+    }
+
+    if (apply_pca) {
+        if (verbose) {
+            printf("Revert PCA transform on centroids\n");
+        }
+        std::vector<float> cent_transformed(d * k);
+        pca.reverse_transform(k, centroids.data(), cent_transformed.data());
+        cent_transformed.swap(centroids);
+    }
+}
+
+/******************************************************************************
+ * HierarchicalBinClustering implementation
+ ******************************************************************************/
+HierarchicalBinClustering::HierarchicalBinClustering(int d, int k, const ClusteringParameters &cp):
+    ClusteringParameters(cp), d(d), k(k) {}
+
+namespace {
+
+void slice_segment(const float * src, float * target, const size_t sz, const size_t d_in, const size_t d_out) {
+    for (size_t vidx=0; vidx<sz; vidx++) {
+        std::copy(src + (vidx * d_in), 
+            src + (vidx * d_in + d_out),
+            target + (vidx * d_out));
+    }
+}
+
+std::vector<size_t> get_belongs_bin_cluster(const float * X, const float * C, size_t Xrow, size_t d, size_t &sizeleft, size_t &sizeright) {
+    std::vector<size_t> members(Xrow);
+    sizeleft = 0;
+    sizeright = 0;
+
+    for (size_t rowIdx=0; rowIdx<Xrow; rowIdx++) {
+        float leftdist = faiss::fvec_L2sqr(X + (rowIdx * d), C, d);
+        float rightdist = faiss::fvec_L2sqr(X + (rowIdx * d), C + d, d);
+        if (leftdist <= rightdist) {
+            members[rowIdx] = 0;
+            sizeleft += 1;
+        } else {
+            members[rowIdx] = 1;
+            sizeright += 1;
+        }
+    }
+    
+    return members;
+};
+
+std::vector<float> hierarchicalBinKMeans(
+    const float* x, size_t d, size_t n, size_t depth, const size_t maxdepth, ClusteringParameters &cp, HierarchicalBinIndexFactory &factory) {
+    Clustering clus(d, 2, cp);
+    std::unique_ptr<Index> clustering_index(factory(d));
+    clus.train(n, x, *clustering_index.get());
+
+    if (depth == maxdepth) {
+        return clus.centroids;
+    } else {
+        size_t sizeleft, sizeright;
+        std::vector<size_t> members_centroids = get_belongs_bin_cluster(
+            x, clus.centroids.data(), n, d, sizeleft, sizeright);
+        
+        const size_t tempK = 1 << (maxdepth - (depth -1 ));
+        if (sizeleft < tempK / 2 || sizeright < tempK / 2) {
+            // cut the recursive call
+            Clustering cutClus(d, tempK, cp);
+            std::unique_ptr<Index> cutclustering_index(factory(d));
+            cutClus.train(n, x, *cutclustering_index.get());
+            return cutClus.centroids;
+        }
+
+        std::vector<float> tempXLeft(sizeleft * d);
+        std::vector<float> tempXRight(sizeright * d);
+        size_t ctLeft = 0, ctRight = 0;
+        for (size_t i=0; i<n; i++) {
+            if (members_centroids[i] == 0) {
+                std::copy(x + (i * d), x + (i * d + d), tempXLeft.data() + (ctLeft++ * d));
+            } else {
+                std::copy(x + (i * d), x + (i * d + d), tempXRight.data() + (ctRight++ * d));
+            }
+        }
+
+        std::vector<float> retCentroidsLeft = hierarchicalBinKMeans(
+            tempXLeft.data(), d, sizeleft, depth + 1, maxdepth, cp, factory);
+        std::vector<float> retCentroidsRight = hierarchicalBinKMeans(
+            tempXRight.data(), d, sizeright, depth + 1, maxdepth, cp, factory);
+        std::vector<float> retCentroids;
+        retCentroids.reserve(tempK);
+        retCentroids.insert(retCentroids.end(), retCentroidsLeft.begin(), retCentroidsLeft.end());
+        retCentroids.insert(retCentroids.end(), retCentroidsRight.begin(), retCentroidsRight.end());
+        return retCentroids;
+    }
+}
+
+
+}; // namespace
+
+Index* HierarchicalBinIndexFactory::operator()(int dim) {
+    return new IndexFlatL2(dim);
+}
+
+void HierarchicalBinClustering::train(idx_t n, const float * x, HierarchicalBinIndexFactory& factory) {
+    centroids = hierarchicalBinKMeans(x, d, n, 1, 8, *this, factory);
 }
 
 } // namespace faiss

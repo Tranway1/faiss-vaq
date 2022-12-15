@@ -1,0 +1,708 @@
+Args:
+	dimension = 192
+	dataset size = 53387
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/AUDIO/audio_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/AUDIO/audio_query.bin
+	results filepath = answer/AUDIO_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+54343 
+29776 
+61789 
+48908 
+59639 
+55451 
+52410 
+27327 
+61456 
+49871 
+training index
+[0.810 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 148.0284 s
+[148.839 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_audio_data.bin_53387_optimized.faissindex
+[148.839 s] Adding the vectors to the index
+Encoding Time: 6.6526 s
+72710 
+86048 
+42663 
+68891 
+58638 
+49226 
+42592 
+55789 
+69438 
+71627 
+[155.508 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 0.0717 s
+[155.580 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 512
+	dataset size = 50000
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/CIFAR/cifar_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/CIFAR/cifar_query.bin
+	results filepath = answer/CIFAR_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+0.00809353 
+0.00646043 
+0.00823287 
+0.00899938 
+0.00653082 
+0.00453137 
+0.00893907 
+0.00639043 
+0.0093487 
+0.0109127 
+training index
+[1.301 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 1005.2581 s
+[1006.559 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_cifar_data.bin_50000_optimized.faissindex
+[1006.561 s] Adding the vectors to the index
+Encoding Time: 47.9055 s
+0.00657929 
+0.00570884 
+0.0192995 
+0.0230197 
+0.0232 
+0.00569413 
+0.00521919 
+0.0231838 
+0.0169909 
+0.0115908 
+[1054.490 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 0.2797 s
+[1054.770 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 1369
+	dataset size = 94987
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/ENRON/enron_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/ENRON/enron_query.bin
+	results filepath = answer/ENRON_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+0 
+19 
+33 
+18 
+10 
+3 
+31 
+0 
+38 
+0 
+training index
+[11.351 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 8188.7902 s
+[8200.141 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_enron_data.bin_94987_optimized.faissindex
+[8200.157 s] Adding the vectors to the index
+Encoding Time: 669.8016 s
+38125 
+368 
+1124 
+2567 
+571 
+292 
+916 
+158 
+944 
+382 
+[8870.387 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 5.1132 s
+[8875.501 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 784
+	dataset size = 69000
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/MNIST/mnist_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/MNIST/mnist_query.bin
+	results filepath = answer/MNIST_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+training index
+[3.122 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 2430.3672 s
+[2433.489 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_mnist_data.bin_69000_optimized.faissindex
+[2433.495 s] Adding the vectors to the index
+Encoding Time: 157.5512 s
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+[2591.078 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 2.0564 s
+[2593.135 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 420
+	dataset size = 992272
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/MSONG/msong_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/MSONG/msong_query.bin
+	results filepath = answer/MSONG_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+8.33055 
+6.49112 
+7.50004 
+5.22896 
+5.24852 
+5.34243 
+4.21687 
+4.80162 
+4.88618 
+4.59175 
+training index
+[20.122 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 1331.8980 s
+[1352.020 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_msong_data.bin_992272_optimized.faissindex
+[1352.022 s] Adding the vectors to the index
+Encoding Time: 634.3253 s
+34.7304 
+11.4657 
+4.79044 
+8.53254 
+12.8688 
+17.8562 
+11.7833 
+1.68218 
+7.33631 
+23.9208 
+[1986.838 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 13.0980 s
+[1999.936 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 128
+	dataset size = 332668
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/NOTRE/notre_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/NOTRE/notre_query.bin
+	results filepath = answer/NOTRE_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+34 
+97 
+74 
+36 
+30 
+34 
+92 
+53 
+39 
+113 
+training index
+[2.198 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 84.8560 s
+[87.054 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_notre_data.bin_332668_optimized.faissindex
+[87.054 s] Adding the vectors to the index
+Encoding Time: 17.2602 s
+21 
+14 
+129 
+85 
+166 
+34 
+44 
+142 
+34 
+57 
+[104.335 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 0.1400 s
+[104.475 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 500
+	dataset size = 268643
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/NUSW/nusw_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/NUSW/nusw_query.bin
+	results filepath = answer/NUSW_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+5 
+0 
+0 
+0 
+0 
+8 
+1 
+1 
+0 
+1 
+training index
+[6.350 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 1188.4387 s
+[1194.788 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_nusw_data.bin_268643_optimized.faissindex
+[1194.791 s] Adding the vectors to the index
+Encoding Time: 247.3374 s
+3 
+4 
+6 
+20 
+9 
+11 
+7 
+11 
+4 
+1 
+[1442.193 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 4.3899 s
+[1446.583 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 512
+	dataset size = 79106
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/SUN397/sun_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/SUN397/sun_query.bin
+	results filepath = answer/SUN_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+5085 
+9990 
+8279 
+2977 
+7443 
+16837 
+11779 
+3438 
+12367 
+15397 
+training index
+[2.295 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 1046.6872 s
+[1048.982 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_sun_data.bin_79106_optimized.faissindex
+[1048.984 s] Adding the vectors to the index
+Encoding Time: 75.9602 s
+27934 
+47381 
+27834 
+7236 
+10132 
+21663 
+35733 
+28685 
+8349 
+15101 
+[1124.972 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 0.3304 s
+[1125.303 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 4096
+	dataset size = 99900
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/TREVI/trevi_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/TREVI/trevi_query.bin
+	results filepath = answer/TREVI_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+132 
+137 
+148 
+162 
+173 
+180 
+182 
+180 
+175 
+164 
+training index
+[156.487 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 135370.2154 s
+[135526.702 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_trevi_data.bin_99900_optimized.faissindex
+[135528.231 s] Adding the vectors to the index
+Encoding Time: 6385.9962 s
+206 
+103 
+132 
+158 
+113 
+199 
+60 
+109 
+94 
+121 
+[141914.736 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 14.2053 s
+[141928.941 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 784
+	dataset size = 60000
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/FASHION/fashion_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/FASHION/fashion_query.bin
+	results filepath = answer/FASHION_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 100
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+training index
+[2.743 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 2382.7391 s
+[2385.483 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_fashion_data.bin_60000_optimized.faissindex
+[2385.486 s] Adding the vectors to the index
+Encoding Time: 136.8326 s
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+[2522.360 s] Searching the 100 nearest neighbors of 500 vectors in the index
+Query Time: 4.6264 s
+[2526.986 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 65
+	dataset size = 292385
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/LASTFM/lastfm_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/LASTFM/lastfm_query.bin
+	results filepath = answer/LASTFM_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 100
+-0.0018245 
+0.00450352 
+0.00768534 
+0.000290073 
+0.00159774 
+-0.000201635 
+-0.00456206 
+0.00581216 
+0.00194852 
+-0.0024 
+training index
+[0.884 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 21.8552 s
+[22.739 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_lastfm_data.bin_292385_optimized.faissindex
+[22.739 s] Adding the vectors to the index
+Encoding Time: 3.3219 s
+0.532927 
+-0.097208 
+-0.0319888 
+-0.384023 
+-0.13257 
+-0.340873 
+0.720514 
+0.446662 
+1.96859 
+0.0567262 
+[26.078 s] Searching the 100 nearest neighbors of 500 vectors in the index
+Query Time: 1.5755 s
+[27.654 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 256
+	dataset size = 290000
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/NYTIMES/nytimes_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/NYTIMES/nytimes_query.bin
+	results filepath = answer/NYTIMES_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 100
+0.0283491 
+0.0448665 
+-0.0460115 
+-0.0214623 
+0.0239694 
+-0.0481248 
+-0.0143529 
+0.0217116 
+0.0292328 
+0.0370186 
+training index
+[3.847 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 338.6842 s
+[342.531 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_nytimes_data.bin_290000_optimized.faissindex
+[342.532 s] Adding the vectors to the index
+Encoding Time: 66.9306 s
+0.00545307 
+-0.0668865 
+-0.00494851 
+0.0128514 
+0.0145858 
+0.00397452 
+0.0103534 
+0.0687562 
+0.0258953 
+0.0323872 
+[409.496 s] Searching the 100 nearest neighbors of 500 vectors in the index
+Query Time: 0.5760 s
+[410.072 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 200
+	dataset size = 1193514
+	queries size = 100
+	dataset filepath = /mnt/hdd-2T-3/ikraduya/GLOVE/glove_data.bin
+	queries filepath = /mnt/hdd-2T-3/ikraduya/GLOVE/glove_queries.bin
+	results filepath = answer/GLOVE_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 100
+0.31553 
+0.53765 
+0.10177 
+0.032553 
+0.003798 
+0.015364 
+-0.20344 
+0.33294 
+-0.20886 
+0.10061 
+training index
+[12.936 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 352.4755 s
+[365.412 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_glove_data.bin_1193514_optimized.faissindex
+[365.412 s] Adding the vectors to the index
+Encoding Time: 163.1007 s
+0.074966 
+-0.070562 
+0.18399 
+0.63406 
+0.23225 
+0.080682 
+-0.3493 
+-0.40717 
+-0.05269 
+-0.018762 
+[528.554 s] Searching the 100 nearest neighbors of 100 vectors in the index
+Query Time: 3.3547 s
+[531.908 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 128
+	dataset size = 1097907
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/UKBENCH/ukbench_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/UKBENCH/ukbench_query.bin
+	results filepath = answer/UKBENCH_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+0 
+0 
+2 
+2 
+2 
+0 
+0 
+0 
+28 
+1 
+training index
+[5.510 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 141.7138 s
+[147.223 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_ukbench_data.bin_1097907_optimized.faissindex
+[147.224 s] Adding the vectors to the index
+Encoding Time: 57.9489 s
+47 
+70 
+20 
+4 
+51 
+94 
+70 
+63 
+118 
+42 
+[205.208 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 0.4412 s
+[205.649 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 150
+	dataset size = 2340373
+	queries size = 200
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/IMAGENET/imagenet_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/NNS_BENCH/IMAGENET/imagenet_query.bin
+	results filepath = answer/IMAGENET_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 20
+-0.03369 
+-0.0278173 
+-0.0131692 
+-0.0300562 
+-0.0311737 
+-0.00888185 
+-0.00466193 
+-0.00835808 
+-0.0104131 
+-0.0192578 
+training index
+[17.812 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 311.2636 s
+[329.076 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_imagenet_data.bin_2340373_optimized.faissindex
+[329.076 s] Adding the vectors to the index
+Encoding Time: 174.2242 s
+0.0919195 
+0.135025 
+0.0158268 
+0.0465365 
+0.0470684 
+-0.0876198 
+0.00480521 
+0.0481679 
+-0.0088732 
+0.0876931 
+[503.384 s] Searching the 20 nearest neighbors of 200 vectors in the index
+Query Time: 9.9512 s
+[513.336 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 960
+	dataset size = 1000000
+	queries size = 100
+	dataset filepath = /mnt/hdd-2T-3/ikraduya/GIST/gist_data.bin
+	queries filepath = /mnt/hdd-2T-3/ikraduya/GIST/gist_queries.bin
+	results filepath = answer/GIST_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 100
+0.0459 
+0.0439 
+0.0251 
+0.0318 
+0.0159 
+0.0564 
+0.0335 
+0.0273 
+0.0156 
+0.0627 
+training index
+[43.870 s] Training the index
+IndexPreTransform::train: training chain 0 to 1
+   Training chain component 0/1
+   Applying transform 0/1
+   Training sub-index
+Training Time: 6989.5746 s
+[7033.445 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_ITQ,LSHrt_gist_data.bin_1000000_optimized.faissindex
+[7033.452 s] Adding the vectors to the index
+Encoding Time: 3453.3365 s
+0.194 
+0.1766 
+0.1708 
+0.0853 
+0.0943 
+0.0602 
+0.1117 
+0.0579 
+0.1606 
+0.077 
+[10486.971 s] Searching the 100 nearest neighbors of 100 vectors in the index
+Query Time: 2.1390 s
+[10489.110 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 74962
+	dataset size = 27983
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/KOSARAK/kosarak_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/KOSARAK/kosarak_query.bin
+	results filepath = answer/KOSARAK_ITQ,LSHrt.csv
+	index-string: ITQ,LSHrt
+	K: 100
+1 
+0 
+1 
+1 
+0 
+1 
+0 
+0 
+0 
+1 
+training index

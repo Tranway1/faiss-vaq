@@ -354,8 +354,17 @@ void eig(size_t d_in, double *cov, double *eigenvalues, int verbose)
 
 }
 
+#include <sys/time.h>
+double elapsedin ()
+{
+    struct timeval tv;
+    gettimeofday (&tv, NULL);
+    return  tv.tv_sec + tv.tv_usec * 1e-6;
+}
+
 void PCAMatrix::train (Index::idx_t n, const float *x)
 {
+    double start_time = elapsedin(), finish_time;
     const float * x_in = x;
 
     x = fvecs_maybe_subsample (d_in, (size_t*)&n,
@@ -494,6 +503,8 @@ void PCAMatrix::train (Index::idx_t n, const float *x)
 
     prepare_Ab();
     is_trained = true;
+    finish_time = elapsedin();
+    // printf("PCA Time: %.4f s\n", finish_time-start_time);
 }
 
 void PCAMatrix::copy_from (const PCAMatrix & other)
@@ -837,7 +848,8 @@ OPQMatrix::OPQMatrix (int d, int M, int d2):
 
 void OPQMatrix::train (Index::idx_t n, const float *x)
 {
-
+    // verbose = true;
+    double start_time = getmillisecs();
     const float * x_in = x;
 
     x = fvecs_maybe_subsample (d_in, (size_t*)&n,
@@ -906,6 +918,8 @@ void OPQMatrix::train (Index::idx_t n, const float *x)
         FAISS_THROW_IF_NOT (A.size() == d * d2);
         rotation = A.data();
     }
+    printf(" OPQ PCA time: %.3f s\n", (getmillisecs () - start_time) / 1000.0);
+    // exit(0);
 
     std::vector<float>
         xproj (d2 * n), pq_recons (d2 * n), xxr (d * n),

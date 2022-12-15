@@ -55,7 +55,7 @@ HNSW::HNSW(int M) : rng(12345) {
   max_level = -1;
   entry_point = -1;
   efSearch = 16;
-  efConstruction = 40;
+  efConstruction = 20;
   upper_beam = 1;
   offsets.push_back(0);
 }

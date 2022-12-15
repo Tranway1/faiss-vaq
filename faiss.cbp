@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="faiss"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\faiss\;CMake Files\cmake\;CMake Files\demos\;CMake Files\tutorial\;CMake Files\tutorial\cpp\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tank/local/chunwei/faiss"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tank/local/chunwei/faiss"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/tank/local/chunwei/faiss"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/tank/local/chunwei/faiss"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/tank/local/chunwei/faiss"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/tank/local/chunwei/faiss"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/tank/local/chunwei/faiss"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="faiss">
+				<Option output="/tank/local/chunwei/faiss/faiss/libfaiss_avx2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/faiss"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFINTEGER=int"/>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 faiss"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="faiss/fast">
+				<Option output="/tank/local/chunwei/faiss/faiss/libfaiss_avx2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/faiss"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFINTEGER=int"/>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 faiss/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/faiss/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_imi_flat">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_imi_flat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_imi_flat"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_imi_flat/fast">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_imi_flat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_imi_flat/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_imi_pq">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_imi_pq" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_imi_pq"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_imi_pq/fast">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_imi_pq" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_imi_pq/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_ivfpq_indexing">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_ivfpq_indexing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_ivfpq_indexing"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_ivfpq_indexing/fast">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_ivfpq_indexing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_ivfpq_indexing/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_sift1M">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_sift1M" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_sift1M"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_sift1M/fast">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_sift1M" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_sift1M/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_weighted_kmeans">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_weighted_kmeans" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_weighted_kmeans"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_weighted_kmeans/fast">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_weighted_kmeans" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_weighted_kmeans/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_ikra">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_ikra" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_ikra"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_ikra/fast">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_ikra" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_ikra/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_pro">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_pro" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_pro"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_pro/fast">
+				<Option output="/tank/local/chunwei/faiss/demos/demo_pro" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/demos"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 demo_pro/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1-Flat">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/1-Flat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 1-Flat"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1-Flat/fast">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/1-Flat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 1-Flat/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2-IVFFlat">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/2-IVFFlat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 2-IVFFlat"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2-IVFFlat/fast">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/2-IVFFlat" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 2-IVFFlat/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3-IVFPQ">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/3-IVFPQ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 3-IVFPQ"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3-IVFPQ/fast">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/3-IVFPQ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 3-IVFPQ/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4-GPU">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/4-GPU" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 4-GPU"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4-GPU/fast">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/4-GPU" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 4-GPU/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="5-Multiple-GPUs">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/5-Multiple-GPUs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 5-Multiple-GPUs"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="5-Multiple-GPUs/fast">
+				<Option output="/tank/local/chunwei/faiss/tutorial/cpp/5-Multiple-GPUs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tank/local/chunwei/faiss/tutorial/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/tank/local/chunwei/faiss"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 5-Multiple-GPUs/fast"/>
+					<CompileFile command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j48 -f &quot;/tank/local/chunwei/faiss/tutorial/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tank/local/chunwei/faiss/demos/demo_ikra.cpp">
+			<Option target="demo_ikra"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/demos/demo_imi_flat.cpp">
+			<Option target="demo_imi_flat"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/demos/demo_imi_pq.cpp">
+			<Option target="demo_imi_pq"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/demos/demo_ivfpq_indexing.cpp">
+			<Option target="demo_ivfpq_indexing"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/demos/demo_pro.cpp">
+			<Option target="demo_pro"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/demos/demo_sift1M.cpp">
+			<Option target="demo_sift1M"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/demos/demo_weighted_kmeans.cpp">
+			<Option target="demo_weighted_kmeans"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/AutoTune.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/AutoTune.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/Clustering.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/Clustering.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IVFlib.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IVFlib.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/Index.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/Index.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/Index2Layer.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/Index2Layer.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinary.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinary.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryFlat.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryFlat.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryFromFloat.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryFromFloat.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryHNSW.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryHNSW.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryHash.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryHash.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryIVF.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexBinaryIVF.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexFlat.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexFlat.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexHNSW.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexHNSW.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVF.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVF.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFFlat.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFFlat.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFPQ.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFPQ.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFPQFastScan.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFPQFastScan.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFPQR.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFPQR.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFSpectralHash.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexIVFSpectralHash.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexLSH.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexLSH.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexLattice.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexLattice.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexPQ.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexPQ.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexPQFastScan.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexPQFastScan.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexPreTransform.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexPreTransform.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexRefine.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexRefine.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexReplicas.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexReplicas.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexScalarQuantizer.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexScalarQuantizer.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexShards.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/IndexShards.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/MatrixStats.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/MatrixStats.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/MetaIndexes.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/MetaIndexes.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/VectorTransform.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/VectorTransform.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/clone_index.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/clone_index.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/AuxIndexStructures.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/AuxIndexStructures.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/FaissException.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/FaissException.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/HNSW.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/HNSW.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/PolysemousTraining.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/PolysemousTraining.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/ProductQuantizer.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/ProductQuantizer.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/ScalarQuantizer.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/ScalarQuantizer.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/index_read.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/index_write.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/io.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/io.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/lattice_Zn.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/lattice_Zn.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/pq4_fast_scan.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/pq4_fast_scan.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/pq4_fast_scan_search_1.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/impl/pq4_fast_scan_search_qbs.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/index_factory.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/index_factory.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/BlockInvertedLists.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/BlockInvertedLists.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/DirectMap.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/DirectMap.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/InvertedLists.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/InvertedLists.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/InvertedListsIOHook.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/InvertedListsIOHook.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/OnDiskInvertedLists.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/invlists/OnDiskInvertedLists.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/Heap.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/Heap.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/WorkerThread.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/WorkerThread.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/distances.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/distances.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/distances_simd.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/extra_distances.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/extra_distances.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/hamming.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/hamming.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/partitioning.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/partitioning.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/quantize_lut.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/quantize_lut.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/random.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/random.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/utils.cpp">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/utils/utils.h">
+			<Option target="faiss"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/tutorial/cpp/1-Flat.cpp">
+			<Option target="1-Flat"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/tutorial/cpp/2-IVFFlat.cpp">
+			<Option target="2-IVFFlat"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/tutorial/cpp/3-IVFPQ.cpp">
+			<Option target="3-IVFPQ"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/tutorial/cpp/4-GPU.cpp">
+			<Option target="4-GPU"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/tutorial/cpp/5-Multiple-GPUs.cpp">
+			<Option target="5-Multiple-GPUs"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/faiss/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\faiss\"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/cmake/FindMKL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/cmake/faiss-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/demos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demos\"/>
+		</Unit>
+		<Unit filename="/tank/local/chunwei/faiss/tutorial/cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tutorial\cpp\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

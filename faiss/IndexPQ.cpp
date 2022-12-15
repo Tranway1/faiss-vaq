@@ -303,8 +303,6 @@ void IndexPQ::search (idx_t n, const float *x, idx_t k,
 
 
 
-
-
 void IndexPQStats::reset()
 {
     nq = ncode = n_hamming_pass = 0;

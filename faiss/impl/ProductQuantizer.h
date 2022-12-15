@@ -150,7 +150,7 @@ struct ProductQuantizer {
                  const size_t ncodes,
                  float_maxheap_array_t *res,
                  bool init_finalize_heap = true) const;
-
+    
     /** same as search, but with inner product similarity */
     void search_ip (const float * x,
                  size_t nx,

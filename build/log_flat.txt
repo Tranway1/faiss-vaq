@@ -1,0 +1,156 @@
+Args:
+	dimension = 65
+	dataset size = 292385
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/LASTFM/lastfm_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/LASTFM/lastfm_query.bin
+	results filepath = answer/LASTFM_Flat.csv
+	index-string: Flat
+	K: 100
+-0.0018245 
+0.00450352 
+0.00768534 
+0.000290073 
+0.00159774 
+-0.000201635 
+-0.00456206 
+0.00581216 
+0.00194852 
+-0.0024 
+training index
+[2.354 s] Training the index
+Training Time: 0.0000 s
+[2.355 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_Flat_lastfm_data.bin_292385_optimized.faissindex
+[2.355 s] Adding the vectors to the index
+Encoding Time: 0.0763 s
+0.532927 
+-0.097208 
+-0.0319888 
+-0.384023 
+-0.13257 
+-0.340873 
+0.720514 
+0.446662 
+1.96859 
+0.0567262 
+Args:
+	dimension = 784
+	dataset size = 60000
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/FASHION/fashion_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/FASHION/fashion_query.bin
+	results filepath = answer/FASHION_Flat.csv
+	index-string: Flat
+	K: 100
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+training index
+[4.535 s] Training the index
+Training Time: 0.0000 s
+[4.535 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_Flat_fashion_data.bin_60000_optimized.faissindex
+[4.535 s] Adding the vectors to the index
+Encoding Time: 0.1693 s
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+Args:
+	dimension = 256
+	dataset size = 290000
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/NYTIMES/nytimes_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/NYTIMES/nytimes_query.bin
+	results filepath = answer/NYTIMES_Flat.csv
+	index-string: Flat
+	K: 100
+0.0283491 
+0.0448665 
+-0.0460115 
+-0.0214623 
+0.0239694 
+-0.0481248 
+-0.0143529 
+0.0217116 
+0.0292328 
+0.0370186 
+training index
+[6.802 s] Training the index
+Training Time: 0.0000 s
+[6.802 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_Flat_nytimes_data.bin_290000_optimized.faissindex
+[6.802 s] Adding the vectors to the index
+Encoding Time: 0.2675 s
+0.00545307 
+-0.0668865 
+-0.00494851 
+0.0128514 
+0.0145858 
+0.00397452 
+0.0103534 
+0.0687562 
+0.0258953 
+0.0323872 
+[2.435 s] Searching the 100 nearest neighbors of 500 vectors in the index
+Query Time: 12.2274 s
+[14.663 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+[4.720 s] Searching the 100 nearest neighbors of 500 vectors in the index
+Query Time: 43.6697 s
+[48.390 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+[7.084 s] Searching the 100 nearest neighbors of 500 vectors in the index
+Query Time: 64.7064 s
+[71.791 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors
+Args:
+	dimension = 74962
+	dataset size = 27983
+	queries size = 500
+	dataset filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/KOSARAK/kosarak_data.bin
+	queries filepath = /mnt/hdd-2T-1/ikraduya/ANN_BENCH/KOSARAK/kosarak_query.bin
+	results filepath = answer/KOSARAK_Flat.csv
+	index-string: Flat
+	K: 100
+1 
+0 
+1 
+1 
+0 
+1 
+0 
+0 
+0 
+1 
+training index
+[108.352 s] Training the index
+Training Time: 0.0000 s
+[108.352 s] storing the pre-trained index to /mnt/hdd-2T-1/ikraduya/tmp_idx_faiss/index_trained_Flat_kosarak_data.bin_27983_optimized.faissindex
+[108.352 s] Adding the vectors to the index
+Encoding Time: 7.6032 s
+1 
+0 
+1 
+1 
+0 
+0 
+0 
+0 
+0 
+0 
+[116.965 s] Searching the 100 nearest neighbors of 500 vectors in the index
+Query Time: 2008.5388 s
+[2125.504 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors

@@ -1,0 +1,19 @@
+refinement: 0, 
+Args:
+	dimension = 256
+	dataset size = 25000
+	queries size = 100
+	dataset filepath = /local/chunwei/ikra/lernaean-hydra/hydra2/data/synthetic/data_size25MB_seed1184_len256_znorm.bin
+	queries filepath = /local/chunwei/ikra/lernaean-hydra/hydra2/data/synthetic/queries_size100_seed14784_len256_znorm.bin
+	results filepath = 25MB_answer_HNSW32,Flat,RFlat_syn.csv
+	index-string: HNSW32,Flat,RFlat
+	K: 100
+[0.292 s] Training the index
+Training Time: 0.0000 s
+[0.292 s] storing the pre-trained index to /mnt/hdd-2T-3/ikraduya/tmp_idx_faiss/index_trained_HNSW32,Flat,RFlat_data_size25MB_seed1184_len256_znorm.bin_25000_optimized.faissindex
+[0.292 s] Adding the vectors to the index
+Encoding Time: 3.5811 s
+[3.876 s] Searching the 100 nearest neighbors of 100 vectors in the index
+Query Time: 0.0131 s
+[3.889 s] Query results (vector ids, then distances):
+note that the nearest neighbor is not at distance 0 due to quantization errors

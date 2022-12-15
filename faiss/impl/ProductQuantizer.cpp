@@ -14,6 +14,7 @@
 #include <cstring>
 #include <cstdio>
 #include <memory>
+#include <iostream>
 
 #include <algorithm>
 
@@ -255,6 +256,7 @@ static void init_hypercube_pca (int d, int nbits,
 void ProductQuantizer::train (int n, const float * x)
 {
     if (train_type != Train_shared) {
+        // printf("dimana %lu\n", n);
         train_type_t final_train_type;
         final_train_type = train_type;
         if (train_type == Train_hypercube ||
@@ -266,6 +268,8 @@ void ProductQuantizer::train (int n, const float * x)
             }
         }
 
+        // ProgressiveBinClusteringParameters cpProg;
+
         float * xslice = new float[n * dsub];
         ScopeDeleter<float> del (xslice);
         for (int m = 0; m < M; m++) {
@@ -275,6 +279,9 @@ void ProductQuantizer::train (int n, const float * x)
                         dsub * sizeof(float));
 
             Clustering clus (dsub, ksub, cp);
+            // ProgressiveDimClustering clus (dsub, ksub, cpProg);
+            // clus.progressive_dim_steps = 2;
+            // HierarchicalBinClustering clus(dsub, ksub, cp);
 
             // we have some initialization for the centroids
             if (final_train_type != Train_default) {
@@ -304,6 +311,11 @@ void ProductQuantizer::train (int n, const float * x)
             }
             IndexFlatL2 index (dsub);
             clus.train (n, xslice, assign_index ? *assign_index : index);
+            // ProgressiveDimIndexFactory indexFactory;
+            // clus.train (n, xslice, indexFactory);
+            // HierarchicalBinIndexFactory indexFactory;
+            // clus.train (n, xslice, indexFactory);
+            // clus.train (n, xslice);
             set_params (clus.centroids.data(), m);
         }
 

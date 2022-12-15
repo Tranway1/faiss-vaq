@@ -56,7 +56,7 @@ struct IndexPQ: Index {
         idx_t k,
         float* distances,
         idx_t* labels) const override;
-
+    
     void reset() override;
 
     void reconstruct_n(idx_t i0, idx_t ni, float* recons) const override;

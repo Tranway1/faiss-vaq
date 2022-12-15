@@ -107,6 +107,95 @@ struct Clustering: ClusteringParameters {
     virtual ~Clustering() {}
 };
 
+struct ProgressiveDimClusteringParameters : ClusteringParameters {
+    int progressive_dim_steps; ///< number of incremental steps
+    bool apply_pca;            ///< apply PCA on input
+
+    ProgressiveDimClusteringParameters();
+};
+
+/** generates an index suitable for clustering when called */
+struct ProgressiveDimIndexFactory {
+    /// ownership transferred to caller
+    virtual Index* operator()(int dim);
+
+    virtual ~ProgressiveDimIndexFactory() {}
+};
+
+/** K-means clustering with progressive dimensions used
+ *
+ * The clustering first happens in dim 1, then with exponentially increasing
+ * dimension until d (I steps). This is typically applied after a PCA
+ * transformation (optional). Reference:
+ *
+ * "Improved Residual Vector Quantization for High-dimensional Approximate
+ * Nearest Neighbor Search"
+ *
+ * Shicong Liu, Hongtao Lu, Junru Shao, AAAI'15
+ *
+ * https://arxiv.org/abs/1509.05195
+ */
+struct ProgressiveDimClustering : ProgressiveDimClusteringParameters {
+    using idx_t = Index::idx_t;
+    size_t d; ///< dimension of the vectors
+    size_t k; ///< nb of centroids
+
+    /** centroids (k * d) */
+    std::vector<float> centroids;
+
+    /// stats at every iteration of clustering
+    std::vector<ClusteringIterationStats> iteration_stats;
+
+    ProgressiveDimClustering(int d, int k);
+    ProgressiveDimClustering(
+            int d,
+            int k,
+            const ProgressiveDimClusteringParameters& cp);
+
+    void train(idx_t n, const float* x, ProgressiveDimIndexFactory& factory);
+
+    virtual ~ProgressiveDimClustering() {}
+};
+
+/** generates an index suitable for clustering when called */
+struct HierarchicalBinIndexFactory {
+    /// ownership transferred to caller
+    virtual Index* operator()(int dim);
+
+    virtual ~HierarchicalBinIndexFactory() {}
+};
+
+/** K-means clustering with hierarchical binary dimension
+ *
+ * The clustering first happens in hierarchical binary fashion
+ */
+struct HierarchicalBinClustering: ClusteringParameters {
+    typedef Index::idx_t idx_t;
+    size_t d;              ///< dimension of the vectors
+    size_t k;              ///< nb of centroids
+
+    /** centroids (k * d)
+     * if centroids are set on input to train, they will be used as initialization
+     */
+    std::vector<float> centroids;
+
+    /// stats at every iteration of clustering
+    std::vector<ClusteringIterationStats> iteration_stats;
+
+    ClusteringParameters cp;
+
+    HierarchicalBinClustering (int d, int k, const ClusteringParameters &cp);
+
+    /** run k-means training
+     *
+     * @param x          training vectors, size n * d
+     */
+    virtual void train (idx_t n, const float * x, HierarchicalBinIndexFactory& factory);
+
+
+    virtual ~HierarchicalBinClustering() {}
+};
+
 
 /** simplified interface
  *
@@ -120,8 +209,6 @@ struct Clustering: ClusteringParameters {
 float kmeans_clustering (size_t d, size_t n, size_t k,
                          const float *x,
                          float *centroids);
-
-
 
 }
 
